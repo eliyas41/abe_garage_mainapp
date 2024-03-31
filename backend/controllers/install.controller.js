@@ -20,4 +20,4 @@ async function install(req, res, next) {
   }
 }
 
-module.exports = { install }
+module.exports = { install };

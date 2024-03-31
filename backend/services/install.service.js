@@ -11,7 +11,7 @@ async function install() {
   //temporary variable , used to store all queries
   let queries = [];
   let finalMessage = {};
-  let templine = '';
+  let tempLine = '';
 
   //Read the sql file
   const lines = await fs.readFileSync(queryFile, 'utf8').split('\n');
@@ -23,14 +23,14 @@ async function install() {
         //Skip if it is a comment or empty lines
         return;
       }
-      templine += lines;
+      tempLine += lines;
       if (lines.trim().endsWith(';')) {
         //if it has a semicolon at the end, it is the end of the query
         //prepare the individual query
-        const sqlQuery = templine.trim();
+        const sqlQuery = tempLine.trim();
         //Add query to the lists of queries
         queries.push(sqlQuery);
-        templine = '';
+        tempLine = '';
       }
     })
     resolve("Queries are added to the list");
