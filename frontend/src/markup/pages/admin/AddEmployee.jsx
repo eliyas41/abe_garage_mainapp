@@ -1,4 +1,6 @@
 import React from 'react'
+import AdminMenu from '../../components/Admin/AdminMenu/AdminMenu'
+import AddEmployeeForm from '../../components/Admin/AddEmployeeForm/AddEmployeeForm'
 
 const AddEmployee = () => {
   return (
@@ -17,4 +19,4 @@ const AddEmployee = () => {
   )
 }
 
-export default AddEmployee
+export default AddEmployee;
