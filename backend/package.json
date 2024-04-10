@@ -9,8 +9,11 @@
   "author": "Eliyas",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mysql2": "^3.9.3"
+    "mysql2": "^3.9.3",
+    "sanitize": "^2.1.2"
   }
 }

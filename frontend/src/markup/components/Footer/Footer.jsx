@@ -19,7 +19,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
             {/* <!--Footer Info Box--> */}
             <div class="footer-info-box col-md-4 col-sm-6 col-xs-12">
               <div class="info-inner">
@@ -125,7 +124,6 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -134,8 +132,8 @@ const Footer = () => {
       {/* <!--Footer Bottom--> */}
       <div class="auto-container">
         <div class="footer-bottom">
-          <div class="copyright-text">© Copyright <a href="#">Autorex</a> 2020 . All right reserved.</div>
-          <div class="text">Created by <a href="#">ThemeArc</a></div>
+          <div class="copyright-text">© Copyright <a href="#">Autorex</a> 2024 . All right reserved.</div>
+          <div class="text">Created by <a href="#">Eliyas Fenta</a></div>
         </div>
       </div>
     </footer>
