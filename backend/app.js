@@ -23,7 +23,7 @@ app.use(sanitize.middleware)
 app.use(router)
 //start the web server
 app.listen(port, () => {
-  console.log(`Server is runnin on port: ${port}`)
+  console.log(`Server is running on port: ${port}`)
 })
 
 //export the web server for use in the application
