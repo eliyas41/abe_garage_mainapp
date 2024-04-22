@@ -14,8 +14,14 @@ const logIn = async (formData) => {
   return response;
 }
 
+// A function to log out the user
+const logOut = () => {
+  localStorage.removeItem("employee");
+};
+
 // Export all the functions 
 const loginService = {
-  logIn
+  logIn,
+  logOut
 }
 export default loginService; 

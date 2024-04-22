@@ -1,8 +1,11 @@
 import React from 'react'
 // Import logo
 import logo from "../../../assets/images/logo.png"
+// Import the custom hook
+import { useAuth } from "../../../Context/AuthContext";
 
 const Header = () => {
+  console.log(useAuth())
   return (
     <header className="main-header header-style-one">
 
