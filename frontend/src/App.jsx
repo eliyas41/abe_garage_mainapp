@@ -61,6 +61,14 @@ function App() {
               <AddEmployee />
             </PrivateAuthRoute>
           } />
+        {/* 
+          Customers (/admin/customers) - managers and admins
+          Orders (/admin/orders) - Can be accessed by all employees
+          Add employee (/admin/add-employee) - admins only 
+            - Admin: 3 
+            - Manager: 2 
+            - Employee: 1 
+        */}
       </Routes>
       <Footer />
     </>
