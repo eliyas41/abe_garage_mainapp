@@ -46,7 +46,13 @@ function App() {
               <Orders />
             </PrivateAuthRoute>
           } />
-        <Route path="/admin/customers" element={<Customers />} />
+        {/* // Add the Customers Route  */}
+        <Route path="/admin/customers"
+          element={
+            <PrivateAuthRoute roles={[2, 3]}>
+              <Customers />
+            </PrivateAuthRoute>
+          } />
         <Route path="/admin/employee" element={<Employees />} />
         {/* // Add the Employees Route  */}
         <Route path="/admin/add-employee"
