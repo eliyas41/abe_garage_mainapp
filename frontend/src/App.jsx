@@ -6,6 +6,12 @@ import { Routes, Route } from "react-router";
 import Home from "./markup/pages/Home"
 import Login from "./markup/pages/Login"
 import AddEmployee from "./markup/pages/admin/AddEmployee"
+import Unauthorized from './markup/pages/Unauthorized';
+// Import the Orders and Customers components 
+import Orders from './markup/pages/admin/Orders';
+import Customers from './markup/pages/admin/Customers';
+// Import the Employees component 
+import Employees from './markup/pages/admin/Employees';
 
 // Import the css file
 import "./assets/template_assets/css/bootstrap.css"
@@ -20,6 +26,9 @@ import Header from "./markup/components/Header/Header"
 // Import  Footer Component
 import Footer from "./markup/components/Footer/Footer"
 
+// Import the PrivateAuthRoute component 
+import PrivateAuthRoute from './markup/components/Auth/PrivateAuthRoute';
+
 function App() {
 
   return (
@@ -29,6 +38,23 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin/add-employee" element={<AddEmployee />} />
+        <Route path="/unauthorized" element={<Unauthorized />} />
+        {/* // Add the Orders Route  */}
+        <Route path="/admin/orders"
+          element={
+            <PrivateAuthRoute roles={[1, 2, 3]}>
+              <Orders />
+            </PrivateAuthRoute>
+          } />
+        <Route path="/admin/customers" element={<Customers />} />
+        <Route path="/admin/employee" element={<Employees />} />
+        {/* // Add the Employees Route  */}
+        <Route path="/admin/add-employee"
+          element={
+            <PrivateAuthRoute roles={[3]}>
+              <AddEmployee />
+            </PrivateAuthRoute>
+          } />
       </Routes>
       <Footer />
     </>
