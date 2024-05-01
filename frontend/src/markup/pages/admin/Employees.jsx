@@ -3,6 +3,10 @@ import React from "react";
 import { useAuth } from "../../../Context/AuthContext";
 // Import the Login component 
 import LoginForm from '../../components/LoginForm/LoginForm';
+// Import the admin menu component
+import AdminMenu from "../../components/Admin/AdminMenu/AdminMenu";
+// Import the EmployeesList component 
+import EmployeesList from "../../components/Admin/EmployeesList/EmployeesList";
 
 function Employees() {
   // Destructure the auth hook 
@@ -12,7 +16,16 @@ function Employees() {
     if (isAdmin) {
       return (
         <div>
-          <h1>Employees Page</h1>
+          <div className="container-fluid admin-pages">
+            <div className="row">
+              <div className="col-md-3 admin-left-side">
+                <AdminMenu />
+              </div>
+              <div className="col-md-9 admin-right-side">
+                <EmployeesList />
+              </div>
+            </div>
+          </div>
         </div>
       );
     } else {
