@@ -7,6 +7,7 @@ import { useAuth } from "../../../../Context/AuthContext";
 import { format } from 'date-fns'; // To properly format the date on the table 
 // Import the getAllEmployees function  
 import employeeService from "../../../../services/employee.service";
+import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 
 // Create the EmployeesList component 
 const EmployeesList = () => {
@@ -92,7 +93,11 @@ const EmployeesList = () => {
                       <td>{employee.company_role_name}</td>
                       <td>
                         <div className="edit-delete-icons">
-                          edit | delete
+                          {/* edit | delete */}
+                          <div>
+                            <EditOutlined style={{ cursor: "pointer", color: "green" }} />
+                            <DeleteOutlined style={{ marginLeft: "30px", cursor: "pointer", color: "red" }} />
+                          </div>
                         </div>
                       </td>
                     </tr>
