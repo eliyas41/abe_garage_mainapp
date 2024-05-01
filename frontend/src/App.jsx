@@ -37,7 +37,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/admin/add-employee" element={<AddEmployee />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
         {/* // Add the Orders Route  */}
         <Route path="/admin/orders"
