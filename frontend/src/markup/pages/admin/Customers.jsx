@@ -4,6 +4,7 @@ const Customers = () => {
   return (
     <div>
       <h1>Customers Page</h1>
+      <p>this is git conflict</p>
     </div>
   );
 }
