@@ -38,6 +38,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
+
         {/* // Add the Orders Route  */}
         <Route path="/admin/orders"
           element={
@@ -45,6 +46,7 @@ function App() {
               <Orders />
             </PrivateAuthRoute>
           } />
+
         {/* // Add the Customers Route  */}
         <Route path="/admin/customers"
           element={
@@ -52,15 +54,18 @@ function App() {
               <Customers />
             </PrivateAuthRoute>
           } />
+
+        {/* Add the Employees Route */}
         <Route path="/admin/employee" element={<Employees />} />
+
         {/* // Add the Employees Route  */}
-        {/* <Route path="/admin/add-employee" element={<AddEmployee />} /> */}
         <Route path="/admin/add-employee"
           element={
             <PrivateAuthRoute roles={[3]}>
               <AddEmployee />
             </PrivateAuthRoute>
           } />
+
         {/* 
           Customers (/admin/customers) - managers and admins
           Orders (/admin/orders) - Can be accessed by all employees
@@ -69,6 +74,7 @@ function App() {
             - Manager: 2 
             - Employee: 1 
         */}
+
       </Routes>
       <Footer />
     </>
