@@ -56,7 +56,7 @@ function App() {
           } />
 
         {/* Add the Employees Route */}
-        <Route path="/admin/employee" element={<Employees />} />
+        <Route path="/admin/employees" element={<Employees />} />
 
         {/* // Add the Employees Route  */}
         <Route path="/admin/add-employee"
