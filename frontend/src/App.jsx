@@ -21,9 +21,9 @@ import "./assets/template_assets/css/color.css"
 //Import custom.css
 import "./assets/styles/custom.css"
 
-// Import the Header component
+// Import the component
 import Header from "./markup/components/Header/Header"
-// Import  Footer Component
+import About from './markup/pages/About';
 import Footer from "./markup/components/Footer/Footer"
 
 // Import the PrivateAuthRoute component 
@@ -36,6 +36,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
 
