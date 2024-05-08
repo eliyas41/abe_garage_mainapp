@@ -3,6 +3,7 @@ import BottomBanner from '../components/BottomBanner/BottomBanner'
 import AboutUs from '../components/AboutUs/AboutUs'
 import FeatureService from '../components/FeatureService/FeatureService'
 import QualityService from '../components/QualityService/QualityService'
+import AdditionalService from '../components/AdditionalService/AdditionalService'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <AboutUs />
       <FeatureService />
       <QualityService />
+      <AdditionalService />
     </>
   )
 }
