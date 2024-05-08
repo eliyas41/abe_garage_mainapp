@@ -24,6 +24,8 @@ import "./assets/styles/custom.css"
 // Import the component
 import Header from "./markup/components/Header/Header"
 import About from './markup/pages/About';
+import Services from './markup/pages/Services';
+import Contact from "./markup/pages/Contact"
 import Footer from "./markup/components/Footer/Footer"
 
 // Import the PrivateAuthRoute component 
@@ -37,6 +39,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
 

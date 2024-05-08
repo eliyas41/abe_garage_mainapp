@@ -13,20 +13,20 @@ const About = () => {
     <>
       <RoutingPageBanner title="About Us" />
       {/* About Section Three */}
-      <section style={{ marginTop: "-50px" }} class="about-section-three">
-        <div class="auto-container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="content">
+      <section style={{ marginTop: "-50px" }} className="about-section-three">
+        <div className="auto-container">
+          <div className="row">
+            <div className="col-lg-7">
+              <div className="content">
                 <h2 style={{ fontSize: "20px" }}>We are highly skilled mechanics for your car repair</h2>
-                <div class="text">
+                <div className="text">
                   <small style={{ fontSize: "17px" }}><p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
                     <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information heading towards a streamlined cloud solution. User generated content in real-time will have multiple.</p></small>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5">
-              <div class="image"><img style={{ height: "370px" }} src={carWheel} alt="" /></div>
+            <div className="col-lg-5">
+              <div className="image"><img style={{ height: "370px" }} src={carWheel} alt="" /></div>
             </div>
           </div>
         </div>
