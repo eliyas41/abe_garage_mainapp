@@ -260,3 +260,17 @@ input:disabled {
 .change-status {
   cursor: pointer;
 }
+
+/* -------Home  QualityService Componenet ------ */
+.image__container {
+  overflow: hidden;
+  position: relative;
+}
+
+.image__container img {
+  transition: transform 0.3s ease;
+}
+
+.image__container:hover img {
+  transform: scale(1.1);
+}
