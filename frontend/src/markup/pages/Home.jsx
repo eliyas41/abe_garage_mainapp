@@ -1,8 +1,11 @@
 import React from 'react'
+import BottomBanner from '../components/BottomBanner/BottomBanner'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <BottomBanner />
+    </>
   )
 }
 
