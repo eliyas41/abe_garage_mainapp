@@ -5,6 +5,7 @@ import FeatureService from '../components/FeatureService/FeatureService'
 import QualityService from '../components/QualityService/QualityService'
 import AdditionalService from '../components/AdditionalService/AdditionalService'
 import AboutVideo from '../components/AboutVideo/AboutVideo'
+import Appointment from '../components/Appointment/Appointment'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <QualityService />
       <AdditionalService />
       <AboutVideo />
+      <Appointment />
     </>
   )
 }
