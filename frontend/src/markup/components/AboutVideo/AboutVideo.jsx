@@ -21,4 +21,4 @@ const AboutVideo = () => {
   )
 }
 
-export default AboutVideo
+export default AboutVideo;

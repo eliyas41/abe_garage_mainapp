@@ -1,7 +1,5 @@
 import React from 'react'
-import vBan1 from "../../../assets/images/misc/vban1.jpg"
-import vBan2 from "../../../assets/images/misc/vban2.jpg"
-
+import vBan1 from "../../../assets/images/misc/workshop.f6def2e6adeaba7dd696.png"
 const AboutUs = () => {
   return (
     //  About Us
@@ -10,12 +8,10 @@ const AboutUs = () => {
         <div className="row">
           <div className="col-lg-5">
             <div className="image-box">
-              <img src={vBan1} alt="" />
-              <img src={vBan2} alt="" />
-              <div className="year-experience" data-parallax='{"y": 30}'><strong>24</strong> years <br />
-                Experience </div>
+              <img style={{ height: "450px", width: "450px" }} src={vBan1} alt="" />
             </div>
           </div>
+
           <div className="col-lg-7 pl-lg-5">
             <div className="sec-title">
               <h5>Welcome to Our workshop</h5>
@@ -41,4 +37,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutUs;
