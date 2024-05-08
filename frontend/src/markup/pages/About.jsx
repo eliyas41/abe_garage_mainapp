@@ -1,6 +1,6 @@
 import React from 'react'
-import videoImg from "../../assets/images/home_imges/video.png"
 import carWheel from "../../assets/images/home_imges/10df06f8-6b02-4e4d-9331-521251fa3ace.png"
+import RoutingPageBanner from '../components/RoutingPageBanner/RoutingPageBanner'
 import AdditionalService from '../components/AdditionalService/AdditionalService'
 import AboutVideo from '../components/AboutVideo/AboutVideo'
 import Appointment from '../components/Appointment/Appointment'
@@ -11,16 +11,7 @@ import AboutUs from '../components/AboutUs/AboutUs'
 const About = () => {
   return (
     <>
-      <section className="page-title" style={{ backgroundImage: `url(${videoImg}`, backgroundRepeat: "no-repeat", height: "100px" }}>
-        <div style={{ marginTop: "-40px", marginLeft: "200px" }} className="auto-container">
-          <h2 style={{ fontSize: "25px", marginBottom: "20px" }}>About us</h2>
-          <ul className="page-breadcrumb">
-            <li style={{ fontSize: "20px" }}><a href="/">home</a></li>
-            <li style={{ fontSize: "20px" }}>About us</li>
-          </ul>
-        </div>
-      </section>
-
+      <RoutingPageBanner title="About Us" />
       {/* About Section Three */}
       <section style={{ marginTop: "-50px" }} class="about-section-three">
         <div class="auto-container">
