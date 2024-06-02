@@ -45,10 +45,10 @@ const LoginForm = () => {
       employee_email,
       employee_password
     };
-    console.log(formData);
+    // console.log(formData);
     // Call the service
     const loginEmployee = loginService.logIn(formData);
-    console.log(loginEmployee);
+    // console.log(loginEmployee);
     loginEmployee.then((response) => response.json())
       .then((response) => {
         console.log(response);
